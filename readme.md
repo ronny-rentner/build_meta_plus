@@ -1,5 +1,7 @@
 # build_meta_plus
 
+![Tests Status](https://github.com/ronny-rentner/build_meta_plus/actions/workflows/tests.yml/badge.svg)
+
 A lightweight `setuptools` build backend wrapper that supports pre- and post-build hooks via `pyproject.toml`.
 
 `build_meta_plus` delegates all standard PEP 517/660 build logic to [setuptools.build_meta](https://setuptools.pypa.io/en/latest/build_meta.html), but allows you to execute shell commands at key stages of the build process.
