@@ -5,13 +5,16 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "build_meta_plus"
 version = "0.1.0"
-description = "A setuptools backend that supports pre- and post-build hooks via pyproject.toml"
+description = "A drop-in replacement for setuptools.build_meta that adds automated pre- and post-build hooks for cleanup and asset generation"
 authors = [{ name = "Ronny Rentner", email = "build_meta_plus.code@ronny-rentner.de" }]
 readme = "readme.md"
 license = "MIT"
 license-files = ["license.txt"]
 requires-python = ">=3.9"
-keywords = ["setuptools", "build", "backend", "hooks", "pep517"]
+keywords = [
+    "setuptools", "build_meta", "build-backend", "hooks", "pep517", "pep660", 
+    "drop-in replacement", "automation", "cleanup", "pre-build", "post-build"
+]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",

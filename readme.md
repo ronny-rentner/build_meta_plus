@@ -5,9 +5,9 @@
 [![Python >=3.9](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/github/license/ronny-rentner/build_meta_plus.svg)](https://github.com/ronny-rentner/build_meta_plus/blob/main/license.txt)
 
-A lightweight `setuptools` build backend wrapper that supports pre- and post-build hooks via `pyproject.toml`.
+A lightweight, drop-in replacement for the default [setuptools.build_meta](https://setuptools.pypa.io/en/latest/build_meta.html) backend that supports automated pre- and post-build hooks via `pyproject.toml`.
 
-`build_meta_plus` delegates all standard PEP 517/660 build logic to [setuptools.build_meta](https://setuptools.pypa.io/en/latest/build_meta.html), but allows you to execute shell commands at key stages of the build process.
+`build_meta_plus` maintains full compatibility with `setuptools` while restoring the flexibility of custom build steps—ideal for replacing legacy `setup.py` hooks in modern PEP 517 projects.
 
 ## Why use this?
 
