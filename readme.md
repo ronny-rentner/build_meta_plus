@@ -3,7 +3,7 @@
 [![PyPI Package](https://img.shields.io/pypi/v/build-meta-plus.svg)](https://pypi.org/project/build-meta-plus)
 [![Run Tests](https://github.com/ronny-rentner/build-meta-plus/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/ronny-rentner/build-meta-plus/actions/workflows/tests.yml)
 [![Python >=3.9](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/github/license/ronny-rentner/build-meta-plus.svg)](https://github.com/ronny-rentner/build-meta-plus/blob/main/license.txt)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 A lightweight, drop-in replacement for the default [setuptools.build_meta](https://setuptools.pypa.io/en/latest/build_meta.html) backend that supports automated pre- and post-build hooks via `pyproject.toml`.
 
