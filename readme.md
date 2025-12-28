@@ -15,9 +15,9 @@ For example, you can automatically remove `.egg-info` directories after a build:
 post-build = ["rm -rf *.egg-info"]
 ```
 
-## Configuration
+## Getting Started
 
-Update your `pyproject.toml` to use `build_meta_plus` as the build backend:
+To use `build_meta_plus` in your project, configure your `pyproject.toml` to use it as the build backend and define your hooks:
 
 ```toml
 [build-system]
@@ -26,7 +26,8 @@ build-backend = "build_meta_plus"
 
 [tool.build_meta_plus]
 pre-build = [
-    "echo 'Starting build...'"
+    "echo 'Generating assets...'",
+    "python scripts/generate_version.py"
 ]
 post-build = [
     "rm -rf *.egg-info",
@@ -34,14 +35,4 @@ post-build = [
 ]
 ```
 
-## Usage
-
-Interaction is identical to standard Python build tools:
-
-- **Build Package:** `python -m build`
-- **Install Package:** `pip install .`
-- **Editable Install:** `pip install -e .`
-
-## How it works
-
-The backend wraps the standard `build_sdist`, `build_wheel`, and `build_editable` hooks. When any of these are called, `build_meta_plus` executes the commands defined in `pre-build`, runs the original `setuptools` hook, and then executes the `post-build` commands.
+When you run standard build or install commands (like `python -m build` or `pip install .`), `build_meta_plus` automatically intercepts the PEP 517/660 hooks, executes your `pre-build` commands, delegates the actual build to `setuptools`, and finally runs your `post-build` cleanup.
