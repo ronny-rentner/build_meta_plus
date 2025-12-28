@@ -6,9 +6,9 @@ A lightweight `setuptools` build backend wrapper that supports pre- and post-bui
 
 ## Why use this?
 
-The primary use case is cleaning up "trash" files that Python's build system leaves behind, or performing pre-build generation tasks.
+`build_meta_plus` is ideal for streamlining your development workflow, from automating pre-build generation tasks to maintaining a tidy project environment by automatically managing temporary build artifacts.
 
-For example, you can automatically remove `.egg-info` directories after a build:
+For example, you can ensure your workspace remains clean by removing `.egg-info` directories immediately after a build:
 
 ```toml
 [tool.build_meta_plus]
