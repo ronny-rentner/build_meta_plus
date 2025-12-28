@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61", "wheel", "build-meta-plus"]
+build-backend = "build_meta_plus"
 
 [project]
 name = "build-meta-plus"
@@ -38,4 +38,7 @@ Issues = "https://github.com/ronny-rentner/build-meta-plus/issues"
 py-modules = ["build_meta_plus"]
 
 [tool.build_meta_plus]
-post-build = ["rm -rf build_meta_plus.egg-info"]
+post-build = [
+    "rm -rf build/",
+    "rm -rf *.egg-info/"
+]
