@@ -1,4 +1,8 @@
 [build-system]
+# In this test project, we omit 'build-meta-plus' from 'requires' 
+# because we are testing the local source code.
+# For a real project, you should use:
+# requires = ["setuptools>=61", "wheel", "build-meta-plus"]
 requires = ["setuptools>=61", "wheel"]
 build-backend = "build_meta_plus"
 
