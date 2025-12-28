@@ -1,6 +1,9 @@
 # build_meta_plus
 
-![Tests Status](https://github.com/ronny-rentner/build_meta_plus/actions/workflows/tests.yml/badge.svg)
+[![PyPI Package](https://img.shields.io/pypi/v/build_meta_plus.svg)](https://pypi.org/project/build_meta_plus)
+[![Run Tests](https://github.com/ronny-rentner/build_meta_plus/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/ronny-rentner/build_meta_plus/actions/workflows/tests.yml)
+[![Python >=3.9](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/github/license/ronny-rentner/build_meta_plus.svg)](https://github.com/ronny-rentner/build_meta_plus/blob/main/license.txt)
 
 A lightweight `setuptools` build backend wrapper that supports pre- and post-build hooks via `pyproject.toml`.
 
